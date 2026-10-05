@@ -4,6 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NRE46DZL85"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NRE46DZL85');
+  </script>
   <title>Wedora — Your Love Story, Beautifully Online</title>
   <meta name="description"
     content="Buat website pernikahan elegan yang personal, mudah dibagikan, dan siap menyambut tamu Anda.">
@@ -27,13 +36,13 @@
     <div class="shell header-inner"><a href="index.html" class="wordmark"
         aria-label="Wedora home">Wedora<span>.</span></a>
       <nav class="desktop-nav" aria-label="Navigasi utama">
-        <a href="index.html" class="nav-link active">Home</a><a href="pages/templates.html"
-          class="nav-link ">Templates</a><a href="pages/pricing.html" class="nav-link ">Pricing</a><a
-          href="pages/how-it-works.html" class="nav-link ">How It Works</a><a href="pages/faq.html"
-          class="nav-link ">FAQ</a>
+        <a href="index.html" class="nav-link active" onclick="gtag('event', 'nav_click', {nav_item: 'Home'});">Home</a><a href="pages/templates.html"
+          class="nav-link " onclick="gtag('event', 'nav_click', {nav_item: 'Templates'});">Templates</a><a href="pages/pricing.html" class="nav-link " onclick="gtag('event', 'nav_click', {nav_item: 'Pricing'});">Pricing</a><a
+          href="pages/how-it-works.html" class="nav-link " onclick="gtag('event', 'nav_click', {nav_item: 'How It Works'});">How It Works</a><a href="pages/faq.html"
+          class="nav-link " onclick="gtag('event', 'nav_click', {nav_item: 'FAQ'});">FAQ</a>
       </nav>
       <div class="header-actions"><a class="btn btn-ghost" href="pages/login.html">Login</a><a class="btn btn-primary"
-          href="pages/order.html">Buat Website <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          href="pages/order.html" onclick="gtag('event', 'cta_click', {variant: 'A', cta_text: 'Buat Website', location: 'header'});">Buat Website <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M5 12h14M13 6l6 6-6 6" />
           </svg>
@@ -67,7 +76,7 @@
                 stroke-linejoin="round" aria-hidden="true">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
-            </a><a class="btn btn-outline btn-lg" href="pages/order.html">Mulai Membuat Website</a></div>
+            </a><a class="btn btn-outline btn-lg" href="pages/order.html" onclick="gtag('event', 'cta_click', {variant: 'A', cta_text: 'Mulai Membuat Website', location: 'hero'});">Mulai Membuat Website</a></div>
           <div class="micro-proof"><span>★★★★★</span>
             <p><strong>4.9/5</strong> dari pasangan Wedora</p>
           </div>
@@ -606,13 +615,3 @@
 </body>
 
 </html>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NRE46DZL85"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-NRE46DZL85');
-</script>
